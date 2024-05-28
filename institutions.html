@@ -1276,140 +1276,132 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form> -->
+          <form
+            class="contact-form text-left"
+            method="post"
+            action="javascript:sendMailJS();"
+            autocomplete="off">
+            <!-- Messages For The User -->
+            <div class="messages"></div>
 
-          <!-- Row -->
-          <div class="row">
-            <!-- Column -->
+            <!-- Form Controls -->
+            <div
+              class="controls"
+              data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: > .row > div ; delay: 50; repeat: false">
+              <!-- Row -->
+              <div class="row">
+                <!-- Column -->
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                  <!-- Form Group -->
+                  <div class="form-group">
+                    <p class="text-weight-400 margin-bottom-10px">
+                      First Name *
+                    </p>
 
-            <form
-              class="contact-form text-left"
-              method="post"
-              action="javascript:sendMailJS();"
-              autocomplete="off">
-              <!-- Messages For The User -->
-              <div class="messages"></div>
-
-              <!-- Form Controls -->
-              <div
-                class="controls"
-                data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: > .row > div ; delay: 50; repeat: false">
-                <!-- Row -->
-                <div class="row">
-                  <!-- Column -->
-                  <div class="col-md-6 col-sm-12 col-xs-12">
-                    <!-- Form Group -->
-                    <div class="form-group">
-                      <p class="text-weight-400 margin-bottom-10px">
-                        First Name *
-                      </p>
-
-                      <!-- Input -->
-                      <input
-                        class="form-control form_name no-margin-top padding-30px text-weight-400 roboto bg-transparent border-color-gray-extra-dark"
-                        type="text"
-                        name="fname"
-                        placeholder="i.e. Jason"
-                        required="required"
-                        data-error="First name is required." />
-
-                      <!-- Error Block -->
-                      <div class="help-block with-errors"></div>
-                    </div>
-                    <!-- End Form Group -->
-                  </div>
-                  <!-- End Column -->
-
-                  <!-- Column -->
-                  <div class="col-md-6">
-                    <!-- Form Group -->
-                    <div class="form-group">
-                      <p class="text-weight-400 margin-bottom-10px">
-                        Last Name *
-                      </p>
-
-                      <!-- Input -->
-                      <input
-                        class="form-control form_name no-margin-top padding-30px text-weight-400 roboto bg-transparent border-color-gray-extra-dark"
-                        type="text"
-                        name="lname"
-                        placeholder="i.e. Vettara"
-                        required="required"
-                        data-error="Last name is required." />
-
-                      <!-- Error Block -->
-                      <div class="help-block with-errors"></div>
-                    </div>
-                    <!-- End Form Group -->
-                  </div>
-                  <!-- End Column -->
-                </div>
-                <!-- End Row -->
-
-                <div class="row">
-                  <!-- Column -->
-                  <div class="col-md-12">
-                    <!-- Form Group -->
-                    <div class="form-group">
-                      <p class="text-weight-400 margin-bottom-10px">
-                        Phone Number *
-                      </p>
-
-                      <!-- Input -->
-                      <input
-                        class="form-control form_name no-margin-top padding-30px text-weight-400 roboto bg-transparent border-color-gray-extra-dark"
-                        type="tel"
-                        name="phone"
-                        placeholder="i.e. +91 8919 400 283" />
-
-                      <!-- Error Block -->
-                      <div class="help-block with-errors"></div>
-                    </div>
-                    <!-- End Form Group -->
-                  </div>
-                  <!-- End Column -->
-                </div>
-
-                <!-- Row -->
-                <div class="row">
-                  <!-- Column -->
-                  <div class="col-md-12">
-                    <!-- Form Group -->
-                    <div class="form-group">
-                      <p class="text-weight-400 margin-bottom-20px">
-                        Message *
-                      </p>
-
-                      <!-- Input -->
-                      <textarea
-                        class="form-control form_message no-margin-top padding-30px text-weight-400 roboto bg-transparent border-color-gray-extra-dark"
-                        name="message"
-                        placeholder="Start here..."
-                        rows="4"
-                        required="required"
-                        data-error="Please,leave us a message."></textarea>
-
-                      <!-- Error Block -->
-                      <div class="help-block with-errors"></div>
-                    </div>
-                    <!-- End Form Group -->
-                  </div>
-                  <!-- End Column -->
-
-                  <!-- Column -->
-                  <div class="col-md-12 text-center">
                     <!-- Input -->
                     <input
-                      type="submit"
-                      class="btn btn-small bg-success sm-display-table"
-                      value="Send Message" />
+                      class="form-control form_name no-margin-top padding-30px text-weight-400 roboto bg-transparent border-color-gray-extra-dark"
+                      type="text"
+                      name="fname"
+                      placeholder="i.e. Jason"
+                      required="required"
+                      data-error="First name is required." />
+
+                    <!-- Error Block -->
+                    <div class="help-block with-errors"></div>
                   </div>
-                  <!-- End Column -->
+                  <!-- End Form Group -->
                 </div>
-                <!-- End Row -->
+                <!-- End Column -->
+
+                <!-- Column -->
+                <div class="col-md-6">
+                  <!-- Form Group -->
+                  <div class="form-group">
+                    <p class="text-weight-400 margin-bottom-10px">
+                      Last Name *
+                    </p>
+
+                    <!-- Input -->
+                    <input
+                      class="form-control form_name no-margin-top padding-30px text-weight-400 roboto bg-transparent border-color-gray-extra-dark"
+                      type="text"
+                      name="lname"
+                      placeholder="i.e. Vettara"
+                      required="required"
+                      data-error="Last name is required." />
+
+                    <!-- Error Block -->
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <!-- End Form Group -->
+                </div>
+                <!-- End Column -->
               </div>
-              <!-- End Form Controls -->
-            </form>
-          </div>
+              <!-- End Row -->
+
+              <div class="row">
+                <!-- Column -->
+                <div class="col-md-12">
+                  <!-- Form Group -->
+                  <div class="form-group">
+                    <p class="text-weight-400 margin-bottom-10px">
+                      Phone Number *
+                    </p>
+
+                    <!-- Input -->
+                    <input
+                      class="form-control form_name no-margin-top padding-30px text-weight-400 roboto bg-transparent border-color-gray-extra-dark"
+                      type="tel"
+                      name="phone"
+                      placeholder="i.e. +91 8919 400 283" />
+
+                    <!-- Error Block -->
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <!-- End Form Group -->
+                </div>
+                <!-- End Column -->
+              </div>
+
+              <!-- Row -->
+              <div class="row">
+                <!-- Column -->
+                <div class="col-md-12">
+                  <!-- Form Group -->
+                  <div class="form-group">
+                    <p class="text-weight-400 margin-bottom-20px">Message *</p>
+
+                    <!-- Input -->
+                    <textarea
+                      class="form-control form_message no-margin-top padding-30px text-weight-400 roboto bg-transparent border-color-gray-extra-dark"
+                      name="message"
+                      placeholder="Start here..."
+                      rows="4"
+                      required="required"
+                      data-error="Please,leave us a message."></textarea>
+
+                    <!-- Error Block -->
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <!-- End Form Group -->
+                </div>
+                <!-- End Column -->
+
+                <!-- Column -->
+                <div class="col-md-12 text-center">
+                  <!-- Input -->
+                  <input
+                    type="submit"
+                    class="btn btn-small bg-success sm-display-table"
+                    value="Send Message" />
+                </div>
+                <!-- End Column -->
+              </div>
+              <!-- End Row -->
+            </div>
+            <!-- End Form Controls -->
+          </form>
         </div>
       </div>
     </section>
@@ -1438,14 +1430,9 @@
             <div class="container">
               <div class="row justify-content-center">
                 <div class="col-md-6">
-                  <form
-                    id="admissionForm"
-                    action="submit.php"
-                    method="POST"
-                    onsubmit="return validateForm()">
-                    <h2 class="text-center">Admission Form</h2>
+                  <form id="admissionForm">
                     <div class="form-group">
-                      <label for="name">Name:</label>
+                      <label for="name">Name</label>
                       <input
                         type="text"
                         class="form-control"
@@ -1454,7 +1441,16 @@
                         required />
                     </div>
                     <div class="form-group">
-                      <label for="email">Email:</label>
+                      <label for="number">Number</label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="number"
+                        name="number"
+                        required />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
                       <input
                         type="email"
                         class="form-control"
@@ -1463,7 +1459,7 @@
                         required />
                     </div>
                     <div class="form-group">
-                      <label for="dob">Date of Birth:</label>
+                      <label for="dob">Date of Birth</label>
                       <input
                         type="date"
                         class="form-control"
@@ -1471,24 +1467,72 @@
                         name="dob"
                         required />
                     </div>
+
                     <div class="form-group">
-                      <label for="course">Course:</label>
-                      <input
-                        type="text"
+                      <label for="course">Course</label>
+                      <select
                         class="form-control"
                         id="course"
                         name="course"
-                        required />
+                        required>
+                        <option value="">Select a course</option>
+                        <option value="SSC">SSC</option>
+                        <option value="INTER">Intermediate</option>
+                        <option value="TOSS">TOSS</option>
+                        <option value="DEGREE">DEGREE</option>
+                        <option value="PG">P.G</option>
+                      </select>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">
-                      Submit
-                    </button>
+                    <div class="form-group hidden" id="intermediateOptions">
+                      <label for="intermediateCourse"
+                        >Intermediate Course</label
+                      >
+                      <select
+                        class="form-control"
+                        id="intermediateCourse"
+                        name="intermediateCourse">
+                        <option value="">Select an intermediate course</option>
+                        <option value="M.P.C">M.P.C</option>
+                        <option value="Bi.P.C">Bi.P.C</option>
+                        <option value="C.E.C">C.E.C</option>
+                      </select>
+                    </div>
+                    <div class="form-group hidden" id="degreeOptions">
+                      <label for="degreeCourse">Degree Course</label>
+                      <select
+                        class="form-control"
+                        id="degreeCourse"
+                        name="degreeCourse">
+                        <option value="">Select a degree course</option>
+                        <option value="B.Com (General)">B.Com (General)</option>
+                        <option value="B.Com (Computers)">
+                          B.Com (Computers)
+                        </option>
+                        <option value="B.C.A">B.C.A</option>
+                        <option value="B.A">B.A</option>
+                        <option value="B.B.A">B.B.A</option>
+                      </select>
+                    </div>
+                    <div class="form-group hidden" id="pgOptions">
+                      <label for="pgCourse">P.G Course</label>
+                      <select
+                        class="form-control"
+                        id="pgCourse"
+                        name="pgCourse">
+                        <option value="">Select a P.G course</option>
+                        <option value="M.Com">M.Com</option>
+                        <option value="M.C.A">M.C.A</option>
+                        <option value="M.A">M.A</option>
+                        <option value="M.B.A">M.B.A</option>
+                      </select>
+                    </div>
                   </form>
                 </div>
               </div>
             </div>
           </div>
           <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Submit</button>
             <button
               type="button"
               class="btn btn-secondary"
@@ -1718,6 +1762,25 @@
             alert("Please enter a valid 10-digit mobile number.");
             event.preventDefault();
             return;
+          }
+        });
+      });
+    </script>
+
+    <!-- Admission form start -->
+    <script>
+      $(document).ready(function () {
+        $("#course").on("change", function () {
+          $("#intermediateOptions, #degreeOptions, #pgOptions").addClass(
+            "hidden"
+          );
+
+          if (this.value === "INTER") {
+            $("#intermediateOptions").removeClass("hidden");
+          } else if (this.value === "DEGREE") {
+            $("#degreeOptions").removeClass("hidden");
+          } else if (this.value === "PG") {
+            $("#pgOptions").removeClass("hidden");
           }
         });
       });
