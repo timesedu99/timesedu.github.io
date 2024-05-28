@@ -1551,5 +1551,42 @@
       referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+
+        form.addEventListener("submit", function (event) {
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const mobile = document.getElementById("mobile").value;
+          const message = document.getElementById("message").value;
+
+          // Simple validation checks
+          if (!name || !email || !mobile || !message) {
+            alert("Please fill out all fields.");
+            event.preventDefault();
+            return;
+          }
+
+          // Email validation
+          const emailPattern =
+            /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+          if (!emailPattern.test(email)) {
+            alert("Please enter a valid email address.");
+            event.preventDefault();
+            return;
+          }
+
+          // Mobile number validation
+          const mobilePattern = /^[0-9]{10}$/;
+          if (!mobilePattern.test(mobile)) {
+            alert("Please enter a valid 10-digit mobile number.");
+            event.preventDefault();
+            return;
+          }
+        });
+      });
+    </script>
   </body>
 </html>

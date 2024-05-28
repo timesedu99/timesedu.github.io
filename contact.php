@@ -1,23 +1,28 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars(trim($_POST['name']));
-    $email = htmlspecialchars(trim($_POST['email']));
-    $message = htmlspecialchars(trim($_POST['message']));
+    // Collect and sanitize form data
+    $name = htmlspecialchars($_POST['name']);
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+    $mobile = htmlspecialchars($_POST['mobile']);
+    $message = htmlspecialchars($_POST['message']);
 
-    // Email address where the form details will be sent
-    $to = "timesedu99@gmail.com";
-    $subject = "New Contact Form Submission";
+    // Validate email
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format";
+        exit;
+    }
 
-    $body = "Name: $name\n";
-    $body .= "Email: $email\n\n";
-    $body .= "Message:\n$message\n";
-
+    // Define the recipient email
+    $to = "timesedu99@gmail.com"; // Replace with your email address
+    $subject = "Contact Form Submission from $name";
+    $body = "Name: $name\nEmail: $email\nMobile: $mobile\n\nMessage:\n$message";
     $headers = "From: $email";
 
+    // Send the email
     if (mail($to, $subject, $body, $headers)) {
-        echo "<p>Thank you for contacting us, $name. You will get a reply within 24 hours.</p>";
+        echo "Message sent successfully";
     } else {
-        echo "<p>Sorry, but the email did not go through.</p>";
+        echo "Failed to send message";
     }
 }
 ?>
