@@ -1,47 +1,4 @@
-﻿/*
-@File: Genh Template Styles
-
-* This file contains the styling for the actual template, this
-is the file you need to edit to change the look of the template.
-
-This files table contents are outlined below>>>>>
-
-******************************************* 
-** - Default-style
-** - Default-btn-style
-** - Section-title-style
-** - Top Header-style
-** - Navbar-style
-** - Banner-style
-** - Feature-style
-** - About-style
-** - Solution-style
-** - Services-style
-** - Choose-style
-** - Review-style
-** - Blog-style
-** - Advice-style
-** - Doctor-style
-** - Contact-style
-** - Work-style
-** - Provide-style
-** - Testimonial-style
-** - Appoinment-style
-** - Faq-style
-** - Portfolio-style
-** - Pricing-style
-** - Page Header-style
-** - Contact-style
-** - Error-style
-** - Login-style
-** - Register-style
-** - Password-style
-** - Privacy Policy-style
-** - Terms & Condition-style
-** - Coming Soon-style
-*******************************************
-*/
-@import url("../../css2");
+﻿@import url("../../css2");
 @import url("../../css2-1");
 /*Default-style
 ======================================================*/
@@ -7931,58 +7888,6 @@ li.primary-modal-list-item {
   }
 }
 
-/* .popup-btn a{
-  top:150px;
-  position:fixed;
-  right:-25px;
-  z-index: 1000;
-  transform: rotate(-90deg);
-  background-color: red;
-  padding:10px 20px 35px;
-  border-radius : 10px;
-  height: 0px;
-  background-color: red;
-  color:#fff;
-  }
-  .popup-btn a:hover{
-  text-decoration: none;
-  color:#fff;
-  }
-  .popup-btn1 a{
-      top:250px;
-      position:fixed;
-      right:-50px;
-      z-index: 1000;
-      transform: rotate(-90deg);
-      background-color: red;
-      padding:10px 20px 35px;
-      border-radius : 10px;
-      height: 0px;
-      background-color: #000;
-      color:#fff;
-      }
-      .popup-btn1 a:hover{
-      text-decoration: none;
-      color:#fff;
-      }
-
-      .popup-btn2 a{
-        top:355px;
-        position:fixed;
-        right:-34px;
-        z-index: 1000;
-        transform: rotate(-90deg);
-        background-color: red;
-        padding:10px 20px 35px;
-        border-radius : 10px;
-        height: 0px;
-        background-color: #8c1b9a;
-        color:#fff;
-        }
-        .popup-btn2 a:hover{
-        text-decoration: none;
-        color:#fff;
-        } */
 .sidetab {
   position: fixed;
   right: 0px;

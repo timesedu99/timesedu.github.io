@@ -471,23 +471,21 @@ function toggleTheme() {
   }
 })();
 
-document
-  .getElementById("contactForm")
-  .addEventListener("submit", function (event) {
-    var name = document.getElementById("name").value.trim();
-    var email = document.getElementById("email").value.trim();
-    var message = document.getElementById("message").value.trim();
-
-    if (name === "" || email === "" || message === "") {
-      alert("Please fill in all fields.");
-      event.preventDefault();
-    } else if (!validateEmail(email)) {
-      alert("Please enter a valid email address.");
-      event.preventDefault();
-    }
-  });
-
-function validateEmail(email) {
-  var re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-  return re.test(email);
+function sendMailJS() {
+  var to = "contact@alehsanmt.com";
+  var subject = "HIRE";
+  var firstName = $("input[name=fname]").val();
+  var lastName = $("input[name=lname]").val();
+  var phone = $("input[name=phone]").val();
+  var message = $("textarea[name=message]").val();
+  var body =
+    "Name: " +
+    firstName +
+    " " +
+    lastName +
+    " , Phone: " +
+    phone +
+    " , Message: " +
+    message;
+  window.open("mailto:" + to + " ?subject=" + subject + "&body=" + body);
 }

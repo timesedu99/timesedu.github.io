@@ -1236,7 +1236,7 @@
       <div class="container">
         <div class="contact-form">
           <h2>Contact Us</h2>
-          <form action="contact.php" method="post">
+          <!-- <form action="contact.php" method="post">
             <div class="form-group">
               <label for="name">Name</label>
               <input
@@ -1275,7 +1275,141 @@
                 required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+          </form> -->
+
+          <!-- Row -->
+          <div class="row">
+            <!-- Column -->
+
+            <form
+              class="contact-form text-left"
+              method="post"
+              action="javascript:sendMailJS();"
+              autocomplete="off">
+              <!-- Messages For The User -->
+              <div class="messages"></div>
+
+              <!-- Form Controls -->
+              <div
+                class="controls"
+                data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: > .row > div ; delay: 50; repeat: false">
+                <!-- Row -->
+                <div class="row">
+                  <!-- Column -->
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <!-- Form Group -->
+                    <div class="form-group">
+                      <p class="text-weight-400 margin-bottom-10px">
+                        First Name *
+                      </p>
+
+                      <!-- Input -->
+                      <input
+                        class="form-control form_name no-margin-top padding-30px text-white text-weight-400 roboto bg-transparent border-color-gray-extra-dark"
+                        type="text"
+                        name="fname"
+                        placeholder="i.e. Jason"
+                        required="required"
+                        data-error="First name is required." />
+
+                      <!-- Error Block -->
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- End Form Group -->
+                  </div>
+                  <!-- End Column -->
+
+                  <!-- Column -->
+                  <div class="col-md-6">
+                    <!-- Form Group -->
+                    <div class="form-group">
+                      <p class="text-weight-400 margin-bottom-10px">
+                        Last Name *
+                      </p>
+
+                      <!-- Input -->
+                      <input
+                        class="form-control form_name no-margin-top padding-30px text-white text-weight-400 roboto bg-transparent border-color-gray-extra-dark"
+                        type="text"
+                        name="lname"
+                        placeholder="i.e. Vettara"
+                        required="required"
+                        data-error="Last name is required." />
+
+                      <!-- Error Block -->
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- End Form Group -->
+                  </div>
+                  <!-- End Column -->
+                </div>
+                <!-- End Row -->
+
+                <div class="row">
+                  <!-- Column -->
+                  <div class="col-md-12">
+                    <!-- Form Group -->
+                    <div class="form-group">
+                      <p class="text-weight-400 margin-bottom-10px">
+                        Phone Number *
+                      </p>
+
+                      <!-- Input -->
+                      <input
+                        class="form-control form_name no-margin-top padding-30px text-white text-weight-400 roboto bg-transparent border-color-gray-extra-dark"
+                        type="tel"
+                        name="phone"
+                        placeholder="i.e. +91 8919 400 283" />
+
+                      <!-- Error Block -->
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- End Form Group -->
+                  </div>
+                  <!-- End Column -->
+                </div>
+
+                <!-- Row -->
+                <div class="row">
+                  <!-- Column -->
+                  <div class="col-md-12">
+                    <!-- Form Group -->
+                    <div class="form-group">
+                      <p class="text-weight-400 margin-bottom-20px">
+                        Message *
+                      </p>
+
+                      <!-- Input -->
+                      <textarea
+                        class="form-control form_message no-margin-top padding-30px text-white text-weight-400 roboto bg-transparent border-color-gray-extra-dark"
+                        name="message"
+                        placeholder="Start here..."
+                        rows="4"
+                        required="required"
+                        data-error="Please,leave us a message."></textarea>
+
+                      <!-- Error Block -->
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- End Form Group -->
+                  </div>
+                  <!-- End Column -->
+
+                  <!-- Column -->
+                  <div class="col-md-12 text-center">
+                    <!-- Input -->
+                    <input
+                      type="submit"
+                      class="btn btn-small bg-success text-white sm-display-table"
+                      value="Send Message" />
+                  </div>
+                  <!-- End Column -->
+                </div>
+                <!-- End Row -->
+              </div>
+              <!-- End Form Controls -->
+            </form>
+          </div>
         </div>
       </div>
     </section>
