@@ -472,7 +472,7 @@ function toggleTheme() {
 })();
 
 function sendMailJS() {
-  var to = "contact@alehsanmt.com";
+  var to = "timesedu99@gmail.com";
   var subject = "HIRE";
   var firstName = $("input[name=fname]").val();
   var lastName = $("input[name=lname]").val();
