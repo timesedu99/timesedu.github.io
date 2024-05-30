@@ -405,7 +405,7 @@ a {
 
 .form-control {
   height: 50px;
-  border: 1px solid rgba(12, 184, 182, 0.25);
+  /* border: 1px solid rgba(12, 184, 182, 0.25); */
   padding-left: 15px;
 }
 
@@ -6849,16 +6849,18 @@ table.table.table-striped tr.headerrow td {
 .modal-content input,
 .modal-content select,
 .modal-content textarea {
-  border-radius: 15px;
+  /* border-radius: 15px; */
   font-family: "DIN 2014";
   letter-spacing: 1.4px;
 }
 .separator {
-  width: 110px;
+  width: 100% auto;
   height: 5px;
   background: #038137 0% 0% no-repeat padding-box;
-  border-right: 20px solid #ffcd29;
+  /* border-right: 20px solid #ffcd29; */
   border-radius: 50px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 #popup-ttt {
