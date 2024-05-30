@@ -1376,7 +1376,7 @@
 
     <!-- Modal -->
     <div
-      class="modal fade"
+      class="modal fade bg-transparent"
       id="exampleModal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
@@ -1384,7 +1384,9 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Admission Form
+            </h1>
             <button
               type="button"
               class="btn-close"
@@ -1394,105 +1396,98 @@
           <div class="modal-body">
             <div class="container">
               <div class="row justify-content-center">
-                <div class="col-md-6">
-                  <form id="admissionForm">
-                    <div class="form-group">
-                      <label for="name">Name</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        name="name"
-                        required />
-                    </div>
-                    <div class="form-group">
-                      <label for="number">Number</label>
-                      <input
-                        type="tel"
-                        class="form-control"
-                        id="number"
-                        name="number"
-                        required />
-                    </div>
-                    <div class="form-group">
-                      <label for="email">Email</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        name="email"
-                        required />
-                    </div>
-                    <div class="form-group">
-                      <label for="dob">Date of Birth</label>
-                      <input
-                        type="date"
-                        class="form-control"
-                        id="dob"
-                        name="dob"
-                        required />
-                    </div>
+                <form id="admissionForm">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      required />
+                  </div>
+                  <div class="form-group">
+                    <label for="number">Number</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="number"
+                      name="number"
+                      required />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required />
+                  </div>
+                  <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="dob"
+                      name="dob"
+                      required />
+                  </div>
 
-                    <div class="form-group">
-                      <label for="course">Course</label>
-                      <select
-                        class="form-control"
-                        id="course"
-                        name="course"
-                        required>
-                        <option value="">Select a course</option>
-                        <option value="SSC">SSC</option>
-                        <option value="INTER">Intermediate</option>
-                        <option value="TOSS">TOSS</option>
-                        <option value="DEGREE">DEGREE</option>
-                        <option value="PG">P.G</option>
-                      </select>
-                    </div>
-                    <div class="form-group hidden" id="intermediateOptions">
-                      <label for="intermediateCourse"
-                        >Intermediate Course</label
-                      >
-                      <select
-                        class="form-control"
-                        id="intermediateCourse"
-                        name="intermediateCourse">
-                        <option value="">Select an intermediate course</option>
-                        <option value="M.P.C">M.P.C</option>
-                        <option value="Bi.P.C">Bi.P.C</option>
-                        <option value="C.E.C">C.E.C</option>
-                      </select>
-                    </div>
-                    <div class="form-group hidden" id="degreeOptions">
-                      <label for="degreeCourse">Degree Course</label>
-                      <select
-                        class="form-control"
-                        id="degreeCourse"
-                        name="degreeCourse">
-                        <option value="">Select a degree course</option>
-                        <option value="B.Com (General)">B.Com (General)</option>
-                        <option value="B.Com (Computers)">
-                          B.Com (Computers)
-                        </option>
-                        <option value="B.C.A">B.C.A</option>
-                        <option value="B.A">B.A</option>
-                        <option value="B.B.A">B.B.A</option>
-                      </select>
-                    </div>
-                    <div class="form-group hidden" id="pgOptions">
-                      <label for="pgCourse">P.G Course</label>
-                      <select
-                        class="form-control"
-                        id="pgCourse"
-                        name="pgCourse">
-                        <option value="">Select a P.G course</option>
-                        <option value="M.Com">M.Com</option>
-                        <option value="M.C.A">M.C.A</option>
-                        <option value="M.A">M.A</option>
-                        <option value="M.B.A">M.B.A</option>
-                      </select>
-                    </div>
-                  </form>
-                </div>
+                  <div class="form-group">
+                    <label for="course">Course</label>
+                    <select
+                      class="form-control"
+                      id="course"
+                      name="course"
+                      required>
+                      <option value="">Select a course</option>
+                      <option value="SSC">SSC</option>
+                      <option value="INTER">Intermediate</option>
+                      <option value="TOSS">TOSS</option>
+                      <option value="DEGREE">DEGREE</option>
+                      <option value="PG">P.G</option>
+                    </select>
+                  </div>
+                  <div class="form-group hidden" id="intermediateOptions">
+                    <label for="intermediateCourse">Intermediate Course</label>
+                    <select
+                      class="form-control"
+                      id="intermediateCourse"
+                      name="intermediateCourse">
+                      <option value="">Select an intermediate course</option>
+                      <option value="M.P.C">M.P.C</option>
+                      <option value="Bi.P.C">Bi.P.C</option>
+                      <option value="C.E.C">C.E.C</option>
+                    </select>
+                  </div>
+                  <div class="form-group hidden" id="degreeOptions">
+                    <label for="degreeCourse">Degree Course</label>
+                    <select
+                      class="form-control"
+                      id="degreeCourse"
+                      name="degreeCourse">
+                      <option value="">Select a degree course</option>
+                      <option value="B.Com (General)">B.Com (General)</option>
+                      <option value="B.Com (Computers)">
+                        B.Com (Computers)
+                      </option>
+                      <option value="B.C.A">B.C.A</option>
+                      <option value="B.A">B.A</option>
+                      <option value="B.B.A">B.B.A</option>
+                    </select>
+                  </div>
+                  <div class="form-group hidden" id="pgOptions">
+                    <label for="pgCourse">P.G Course</label>
+                    <select class="form-control" id="pgCourse" name="pgCourse">
+                      <option value="">Select a P.G course</option>
+                      <option value="M.Com">M.Com</option>
+                      <option value="M.C.A">M.C.A</option>
+                      <option value="M.A">M.A</option>
+                      <option value="M.B.A">M.B.A</option>
+                    </select>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
